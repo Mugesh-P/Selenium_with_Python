@@ -1,0 +1,41 @@
+from selenium import webdriver
+from selenium.webdriver.common.action chains import ActionChains
+import time
+import datetime
+from datetime import datetime
+from selenium.webdriver.common.keys import Keys
+
+n = datetime.now()
+def Time Sheet():
+  userName int(input("Enter your username: "))
+  authCode int(input("Enter the Authcode: "))  
+  driver webdriver.Chrome(executable_path="C:\chromedriver.exe")
+  driver.maximize_window()
+  driver.get("TIMESHEET LINK")
+  driver.refresh()
+
+  driver.find_element("name", "form1").send_keys(Emp_entry.get())  
+  driver.find_element("id", "proceed-button").click()
+  time.sleep(3)
+  driver.find_element("id", "auth-code-btn").click()
+  driver.find element("id", "authcode1").send_keys(auth_entry.get()) driver.find_element("id", "form-submit").click()
+  time.sleep(2)
+  driver.find_element("xpath",
+  "/html/body/div[3]/div[1]/div[3]/div/div[2]/div/div/div[8]/div[2]/div[3]/div[1]/div[8]/div[3]/div/table/tbody/tr[1]/td[2]/div/div/input"), send_keys (Keys. BACK SPACE) driver.find element("xpath", "/html/body/div[3]/div[1]/div[3]/div/div[2]/div/div/div[8]/div[2]/div[3]/div[1]/div[8]/div[3]/div/table/tbody/tr[1]/td[2]/div/div/input").send_keys(9)
+  time.sleep(2)
+  driver.find_element("xpath", "/html/body/div[3]/div[1]/div[3]/div/div[2]/div/div/div[8]/div[2]/div[3]/div[8]/span[1]/input").click()
+
+import tkinter as tk
+window tk.Tk() window.title("Timesheet")
+window.geometry("400x300)
+Emp ID tk.Label(window, text="Username:")
+Emp_ID.pack()
+Emp_entry tk. Entry(window)
+Emp_entry.pack()
+auth tk.Label(window, text="Authcode:")
+auth.pack()
+auth_entry= tk. Entry(window, show="*")
+auth_entry.pack()
+button tk.Button(window, text="Submit", command-Time_Sheet)
+button.pack()
+window.mainloop()
